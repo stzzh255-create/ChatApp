@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginPage" class="login-page">
+
+    <div class="login-box">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="logo">
+
+        <h2>Welcome to ChatApp</h2>
+
+        <select id="country">
+            <option value="+62">Indonesia (+62)</option>
+            <option value="+1">USA (+1)</option>
+            <option value="+91">India (+91)</option>
+            <option value="+81">Japan (+81)</option>
+        </select>
+
+        <input id="phone" placeholder="Custom Number">
+
+        <button onclick="joinChat()">Next</button>
+
+    </div>
+
+</div>
+
+<div class="app hidden" id="appPage">
+
+    <div class="sidebar">
+
+        <div class="topbar">
+            <h2>Chats</h2>
+        </div>
+
+        <div id="onlineUsers"></div>
+
+    </div>
+
+    <div class="chat-container">
+
+        <div class="chat-header">
+            <div>
+                <h3>Global Chat</h3>
+                <span>online</span>
+            </div>
+        </div>
+
+        <div id="messages"></div>
+
+        <div class="bottom">
+            <input id="messageInput" placeholder="Type a message">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

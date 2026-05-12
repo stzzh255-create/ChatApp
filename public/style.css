@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    background:#0b141a;
+    font-family:Arial;
+    color:white;
+}
+
+#appPage{
+    display:none;
+}
+
+#appPage{
+    display:none;
+}
+
+.login-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#111b21;
+}
+
+.login-box{
+    width:350px;
+    background:#202c33;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.logo{
+    width:80px;
+}
+
+select,input{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    margin-top:15px;
+    width:100%;
+    padding:12px;
+    background:#25d366;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:16px;
+}
+
+.app{
+    display:flex;
+    height:100vh;
+}
+
+.sidebar{
+    width:320px;
+    background:#202c33;
+    border-right:1px solid #2a3942;
+}
+
+.topbar{
+    padding:20px;
+    background:#202c33;
+}
+
+.chat-container{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    background:#0b141a;
+}
+
+.chat-header{
+    padding:15px;
+    background:#202c33;
+}
+
+#messages{
+    flex:1;
+    overflow:auto;
+    padding:20px;
+}
+
+.message{
+    background:#005c4b;
+    padding:10px;
+    margin:10px 0;
+    border-radius:10px;
+    width:fit-content;
+    max-width:300px;
+}
+
+.bottom{
+    display:flex;
+    padding:15px;
+    background:#202c33;
+}
+
+.bottom input{
+    flex:1;
+}
